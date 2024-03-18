@@ -1,0 +1,21 @@
+.link {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.isActive {
+    color: red;
+}
+
+.nav {
+    display: flex;
+    gap: 8px;
+
+}
