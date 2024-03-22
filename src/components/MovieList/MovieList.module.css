@@ -1,0 +1,37 @@
+@media screen and (min-width: 320px) {
+    .listItem {
+        color: blue;
+        font-weight: 400;
+        font-size: 10px;
+    }
+
+    .list {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .listItem {
+        color: blue;
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+    .list {
+        margin-left: 60px;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .listItem {
+        color: blue;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .list {
+        margin-left: 60px;
+    }
+
+}

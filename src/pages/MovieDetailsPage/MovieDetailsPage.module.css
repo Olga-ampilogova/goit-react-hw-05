@@ -1,0 +1,243 @@
+@media screen and (min-width: 320px) {
+    .block {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .content {
+        margin-left: 20px;
+        width: 300px;
+    }
+
+
+    .loaderContainer {
+        margin-left: 40%;
+    }
+
+    .description {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .span {
+        color: blue;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 18px;
+        color: blue;
+    }
+
+
+    .date {
+        font-size: 14px;
+    }
+
+    .overview {
+        font-size: 12px;
+    }
+
+    .subblock {
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+
+    .link {
+        font-size: 18px;
+        color: blue;
+
+    }
+
+    .backLinkHref {
+        margin-left: 40px;
+        font-size: 16px;
+        color: blue;
+    }
+
+    .score {
+        font-size: 18px;
+        color: blue
+    }
+
+    .image {
+        margin-left: 40px;
+    }
+
+    .list {
+        margin-left: 40px;
+    }
+
+    .information {
+        font-size: 20px;
+        color: blue;
+        margin-left: 40px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .block {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-top: 40px;
+        margin-left: 40px;
+        margin-right: 10px;
+    }
+
+    .content {
+        width: 400px;
+        margin-left: 40px;
+        gap: 10px;
+        row-gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .loaderContainer {
+        margin-left: 40%;
+    }
+
+    .description {
+        display: block;
+        margin-top: 20px;
+
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+
+    .date {
+        font-size: 16px;
+    }
+
+    .overview {
+        font-size: 14px;
+    }
+
+    .subblock {
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+
+    .link {
+        font-size: 18px;
+        color: blue;
+    }
+
+    .backLinkHref {
+        margin-left: 80px;
+        font-size: 18px;
+        color: blue;
+    }
+
+    .score {
+        font-size: 18px;
+        color: blue
+    }
+
+    .image {
+        margin-left: 40px;
+    }
+
+    .list {
+        margin-left: 40px;
+    }
+
+    .information {
+        font-size: 20px;
+        color: blue;
+        margin-left: 40px;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .block {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 1200px;
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+
+    .content {
+        width: 800px;
+        margin-left: 40px;
+        gap: 10px;
+        row-gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .loaderContainer {
+        margin-left: 40%;
+    }
+
+    .description {
+        display: block;
+        margin-top: 20px;
+
+    }
+
+    .span {
+        color: blue;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 20px;
+        color: blue;
+    }
+
+
+    .date {
+        font-size: 18px;
+    }
+
+    .overview {
+        font-size: 18px;
+
+    }
+
+    .subblock {
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+
+    .link {
+        font-size: 18px;
+        color: blue;
+
+    }
+
+    .backLinkHref {
+        margin-left: 80px;
+        font-size: 18px;
+        color: blue;
+    }
+
+    .score {
+        font-size: 18px;
+        color: blue
+    }
+
+    .image {
+        margin-left: 40px;
+    }
+
+    .list {
+        margin-left: 40px;
+    }
+
+    .information {
+        font-size: 20px;
+        color: blue;
+        margin-left: 40px;
+    }
+}

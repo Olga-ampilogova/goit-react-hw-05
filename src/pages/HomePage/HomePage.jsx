@@ -1,38 +1,38 @@
 import { useEffect, useState } from "react";
 import { getTrendingMovies } from "../../movies-api";
-//  import MoviesPage from "../MoviesPage/MoviesPage";
 import MovieList from "../../components/MovieList/MovieList";
-import { Link, useLocation } from "react-router-dom";
-//import { Link, useLocation } from "react-router-dom";
-// import { Link } from "react-router-dom";
-
-// import TrendingMovies from "./trendingmovies/TrendingMovies";
-// import { Link } from "react-router-dom";
+import css from "./Home.module.css";
+import { Loader } from "../../components/Loader/Loader";
+import { ErrorMessage } from "../../components/ErrorMessage/ErrorMessage";
 
 export default function Home() {
   const [movies, setMovies] = useState([]);
   const [error, setError] = useState(false);
-  // const location = useLocation();
+  const [loading, setLoading] = useState(false);
+
   useEffect(() => {
     async function getData() {
+      setLoading(true);
       try {
         const data = await getTrendingMovies();
         setMovies(data.results);
-        // console.log(data.results);
       } catch (error) {
-        setError("");
+        setError(true);
+      } finally {
+        setLoading(false);
       }
     }
     getData();
   }, []);
   return (
     <>
-      {/* <Link to={location.state} state={location}></Link> */}
       <div>
-        <p>Trending Movies</p>
+        <p className={css.title}>Trending Movies</p>
         {error && <p> Sorry! Reload the page!</p>}
         <MovieList movies={movies} />
+        <div className={css.loaderContainer}>{loading && <Loader />}</div>
       </div>
+      {error && <ErrorMessage />}
     </>
   );
 }

@@ -1,38 +1,45 @@
 import { Field, Formik, Form } from "formik";
-//import { Link, useLocation } from "react-router-dom";
-// import { Form } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import toast, { Toaster } from "react-hot-toast";
+import css from "./SearchForm.module.css";
 
 export default function SearchForm({ onSearch }) {
-  // const location = useLocation();
+  const notify = () => toast.error("Please, enter the searchword!");
+  const location = useLocation();
   return (
     <div>
-      {/* <Link to={location.state} state={location}>
-        Go back
-      </Link> */}
+      <Link to={location.state?.from ?? "/"} state={{ from: location }}></Link>
       <header>
         <Formik
           initialValues={{ search: "" }}
           onSubmit={(values, actions) => {
             onSearch(values.search);
             actions.resetForm();
-            // if (values.search.length == 0) {
-            //   // notify();
-            // } else if (values.search.length == 1) {
-            //   // required();
-            // } else {
-            //   onSearch(values.search);
-            //   actions.resetForm();
-            // }
+            if (values.search.length == 0) {
+              notify();
+            } else {
+              onSearch(values.search);
+              actions.resetForm();
+            }
           }}
         >
           <Form>
-            <Field
-              name="search"
-              autoComplete="off"
-              autoFocus
-              placeholder="Search movie"
-            />
-            <button type="submit">Search</button>
+            <div className={css.searchContainer}>
+              <Field
+                name="search"
+                autoComplete="off"
+                autoFocus
+                placeholder="Search movie"
+                className={css.searchInput}
+              />
+              <button type="submit" className={css.button}>
+                Search
+              </button>
+            </div>
+
+            <div>
+              <Toaster position="top-right" reverseOrder={false} />
+            </div>
           </Form>
         </Formik>
       </header>

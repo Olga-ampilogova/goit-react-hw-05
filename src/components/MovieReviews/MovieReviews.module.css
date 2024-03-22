@@ -1,0 +1,106 @@
+@media screen and (min-width: 320px) {
+    .list {
+        list-style-type: none;
+        width: 320px;
+    }
+
+    .loaderContainer {
+        margin-left: 40%;
+    }
+
+    .span {
+        color: blue;
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+
+    .errorMessage {
+        margin-left: 40%;
+        font: 24px;
+        color: brown;
+    }
+
+    .image {
+        width: 250px;
+        height: 350px;
+    }
+
+    .content {
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (min-width: 760px) {
+    .list {
+        width: 760px;
+    }
+
+    .loaderContainer {
+        margin-left: 40%;
+    }
+
+    .span {
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .errorMessage {
+        margin-left: 40%;
+        font: 24px;
+        color: brown;
+    }
+
+    .image {
+        width: 250px;
+        height: 350px;
+    }
+
+    .content {
+        font-size: 14px;
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 1220px) {
+    .list {
+        width: 1200px;
+    }
+
+    .loaderContainer {
+        margin-left: 40%;
+    }
+
+    .span {
+        color: blue;
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 18px;
+        margin-top: 8px;
+    }
+
+    .errorMessage {
+        margin-left: 40%;
+        font: 24px;
+        color: brown;
+    }
+
+    .image {
+        width: 250px;
+        height: 350px;
+    }
+
+    .content {
+        font-size: 16px;
+        width: 850px;
+    }
+}

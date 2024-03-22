@@ -14,15 +14,11 @@ export const getTrendingMovies = async () => {
            }
       },
     });
-   // console.log('API response:', response.data)
       return response.data
-      
-    
   } catch (error) {
-    console.error('Помилка:', error);
+    console.error(error);
     throw error;     }
 }
-
 
 export const getTrendingMoviesById = async (movieId) => {
   const url = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${accessKey}`;
@@ -39,7 +35,6 @@ export const getTrendingMoviesById = async (movieId) => {
       ...response.data,
       poster_path: `https://image.tmdb.org/t/p/w500/${response.data.poster_path}`
     };
-    // console.log('API response:', response.data)
     return dataWithFullImageUrls;
   } catch (error) {
     console.error('Помилка:', error);
@@ -59,14 +54,14 @@ export const getSearchMoives = async (query) => {
         }
       },
     });
-      //console.log('API response:', response.data)
     return response.data.results;
- 
+
   } catch (error) {
-    console.error('Помилка:', error);
+    console.error(error);
+    throw error;
   }
 };
-  
+
 export const getMovieCast = async (movieId) => {
   const url = `https://api.themoviedb.org/3/movie/${movieId}/credits?api_key=${accessKey }`;
   try {
@@ -76,13 +71,12 @@ export const getMovieCast = async (movieId) => {
         headers: {
           Authorization: `Bearer ${accessToken}`
         }
-        
       }
     });
-     console.log('API response:', response.data)
     return response.data;
   } catch (error) {
-    console.error('Помилка:', error);
+   console.error(error);
+    throw error;
   }
 };
 
@@ -95,13 +89,12 @@ export const getMovieCast = async (movieId) => {
         headers: {
           Authorization: `Bearer ${accessToken}`
         }
-        
       }
     })
-    console.log('API response:', response.data)
     return response.data;
   } catch (error) {
-     console.error('Помилка:', error);
+     console.error(error);
+    throw error;
   }
 
 }

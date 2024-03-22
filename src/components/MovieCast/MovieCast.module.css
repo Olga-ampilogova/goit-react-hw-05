@@ -1,0 +1,30 @@
+.image {
+    width: 250px;
+    height: 350px;
+}
+
+.loaderContainer {
+    margin-left: 40%;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.name {
+    font-size: 18px;
+}
+
+.button {
+    font-size: 18px;
+}
+
+.title {
+    margin-top: 20px;
+}
+
+.span {
+    color: blue;
+    font-weight: 600;
+    font-size: 18px;
+}
